@@ -1,3 +1,4 @@
 # JSONParseSet_OtherThings
-
--JSONParse, Dummy Datas, Colection View, Table View, Simple UIView Design, Push Views, Present Views
+-Instagram Home Page and Instagram Story Page 
+-Nested CollectionView, TableView
+-JSONParse, Dummy Datas, Simple UIView Design, Push Views, Present Views
