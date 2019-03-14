@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoryCollectionViewCell" id="Fdy-7e-Yev" userLabel="Story Collection View Cell" customClass="StoryCollectionViewCell" customModule="AvocodeDesign" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="story" translatesAutoresizingMaskIntoConstraints="NO" id="nHR-JE-BwB" userLabel="Design Image View">
+                        <rect key="frame" x="13" y="7" width="54" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="nHR-JE-BwB" secondAttribute="height" multiplier="27:28" id="Jwb-jW-G4Q"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live" translatesAutoresizingMaskIntoConstraints="NO" id="WTu-YU-dZO">
+                        <rect key="frame" x="20" y="47" width="40" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="WTu-YU-dZO" secondAttribute="height" multiplier="40:17" id="iCR-9m-Ohd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mildred" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXQ-IN-Q7M">
+                        <rect key="frame" x="17" y="61" width="46" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="DXQ-IN-Q7M" secondAttribute="height" multiplier="23:6" id="EXp-Vx-IHh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="WTu-YU-dZO" firstAttribute="top" secondItem="Fdy-7e-Yev" secondAttribute="top" constant="47" id="1kJ-1a-zj5"/>
+                <constraint firstAttribute="trailing" secondItem="WTu-YU-dZO" secondAttribute="trailing" constant="20" id="5NK-dD-UE9"/>
+                <constraint firstItem="DXQ-IN-Q7M" firstAttribute="leading" secondItem="Fdy-7e-Yev" secondAttribute="leading" constant="17" id="GfA-xn-vEK"/>
+                <constraint firstItem="nHR-JE-BwB" firstAttribute="top" secondItem="Fdy-7e-Yev" secondAttribute="top" constant="7" id="JC9-uq-yAv"/>
+                <constraint firstAttribute="bottom" secondItem="nHR-JE-BwB" secondAttribute="bottom" constant="17" id="M1c-I9-orP"/>
+                <constraint firstItem="WTu-YU-dZO" firstAttribute="leading" secondItem="Fdy-7e-Yev" secondAttribute="leading" constant="20" id="SM2-GV-sW4"/>
+                <constraint firstItem="DXQ-IN-Q7M" firstAttribute="top" secondItem="Fdy-7e-Yev" secondAttribute="top" constant="61" id="YQq-JV-dWU"/>
+                <constraint firstAttribute="trailing" secondItem="nHR-JE-BwB" secondAttribute="trailing" constant="13" id="YuA-dU-hfT"/>
+                <constraint firstAttribute="trailing" secondItem="DXQ-IN-Q7M" secondAttribute="trailing" constant="17" id="bKy-7j-xIS"/>
+                <constraint firstAttribute="bottom" secondItem="DXQ-IN-Q7M" secondAttribute="bottom" constant="7" id="bmW-O0-MIr"/>
+                <constraint firstItem="nHR-JE-BwB" firstAttribute="leading" secondItem="Fdy-7e-Yev" secondAttribute="leading" constant="13" id="ljq-Ly-4um"/>
+                <constraint firstAttribute="bottom" secondItem="WTu-YU-dZO" secondAttribute="bottom" constant="16" id="wFO-80-h5M"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Cxp-eT-EeY"/>
+            <size key="customSize" width="114" height="130"/>
+            <connections>
+                <outlet property="liveImageView" destination="WTu-YU-dZO" id="pYC-1X-Pi7"/>
+                <outlet property="profileImageView" destination="nHR-JE-BwB" id="yXK-4u-uQ4"/>
+                <outlet property="userNameLabel" destination="DXQ-IN-Q7M" id="buo-8S-bF4"/>
+            </connections>
+            <point key="canvasLocation" x="-72" y="14"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="live" width="127" height="58"/>
+        <image name="story" width="162" height="162"/>
+    </resources>
+</document>
