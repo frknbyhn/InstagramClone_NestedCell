@@ -1,2 +1,9 @@
 # JSONParseSet_OtherThings
--Simple UIView Design
+
+-JSONParse 
+-Dummy Datas
+-Colection View
+-Table View
+-Simple UIView Design 
+-Push Views 
+-Present Views
