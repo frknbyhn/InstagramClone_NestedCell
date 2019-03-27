@@ -1,4 +1,4 @@
-# JSONParseSet_OtherThings
+# JSONParseSet_OtherThingss
 -Instagram Home Page and Instagram Story Page
 
 -Nested CollectionView, TableView
